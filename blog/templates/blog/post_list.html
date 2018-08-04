@@ -8,6 +8,15 @@
     <title>Spencer's blog</title>
 </head>
 <body>
-<h1>Hello World</h1>
+<h1>spencer's random news</h1>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h3><a href="">{{ post.title }}</a></h3>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+
+{% endfor %}
 </body>
 </html>
