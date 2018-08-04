@@ -4,6 +4,7 @@
 *~
 venv/
 db.sqlite3
+/static/admin
 .DS_Store
 .idea/
 
